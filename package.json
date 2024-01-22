@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www",
+    "start": "node ./bin/www",
     "devel": "nodemon --inspect=0.0.0.0:9229 ./bin/www",
     "debug_mode": "$env:DEBUG='api-eg:*'; npm start --inspect"
   },
