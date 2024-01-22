@@ -3,16 +3,19 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon api-eg",
-    "debug_mode": "$env:DEBUG='myapp:*'; npm start"
+    "start": "nodemon ./bin/www",
+    "devel": "nodemon --inspect=0.0.0.0:9229 ./bin/www",
+    "debug_mode": "$env:DEBUG='api-eg:*'; npm start --inspect"
   },
   "dependencies": {
+    "busboy": "^1.6.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "firebase-admin": "^12.0.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "uuid-v4": "^0.1.0"
   }
 }
